@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>COVID-19 Probability tester</title>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(138, 29, 29)">
+            <a class="navbar-brand" href="#" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: rgb(255, 255, 255);"><b>COVID-19 Detector</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+          </nav>
+
+          <div class="container">
+              <h2 class="text-center mt-4">Coronavirus Probability Detector</h2>
+              <form action='/' method="POST">
+                <div class="form-group">
+                  <label for="fever">Enter Fever Value</label>
+                  <input type="text" class="form-control" id="fever" name="fever" placeholder="Enter Fever Value">
+                </div>
+                <div class="form-group">
+                    <label for="age">Enter Age</label>
+                    <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age Value">
+                  </div>
+                
+                <div class="form-group">
+                  <label for="pain">Body Pain</label>
+                  <select class="form-control custom-select" name="pain" id="pain">
+                    <option value="0">No Pain</option>
+                    <option value="1">High Pain</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="runnyNose">Runny Nose</label>
+                    <select class="form-control custom-select" name="runnyNose" id="runnyNose">
+                      <option value="1">No</option>
+                      <option value="0">Yes</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="diffBreath">Breathing Difficulty</label>
+                    <select class="form-control custom-select" name="diffBreath" id="diffBreath">
+                      <option value="-1">No Difficulty</option>  
+                      <option value="0">Medium Difficulty</option>
+                      <option value="1">High Difficulty</option>
+                    </select>
+                  </div>
+                <button class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </body>
+</html>
+
+
+      
